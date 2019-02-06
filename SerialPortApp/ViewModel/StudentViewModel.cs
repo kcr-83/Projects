@@ -10,14 +10,36 @@ namespace SerialPortApp.ViewModel
 {
     public class StudentViewModel { 
 	
+        private Student _selectedStudent;
+ 
+        public Student SelectedStudent { 
+            get { 
+                return _selectedStudent; 
+            } 
+	
+            set { 
+                _selectedStudent = value;
+                DeleteCommand.RaiseCanExecuteChanged(); 
+            } 
+        }
+        public MyICommand DeleteCommand { get; set;} 
+
         public StudentViewModel() { 
             LoadStudents(); 
+            DeleteCommand = new MyICommand(OnDelete, CanDelete);
         }
         public ObservableCollection<Student> Students { 
             get; 
             set; 
         }
 		
+        private void OnDelete() { 
+            Students.Remove(SelectedStudent); 
+        }
+
+        private bool CanDelete() { 
+            return SelectedStudent != null; 
+        }
         public void LoadStudents() { 
             ObservableCollection<Student> students = new ObservableCollection<Student>();
 				

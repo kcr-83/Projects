@@ -6,35 +6,39 @@
              xmlns:local="clr-namespace:SerialPortApp.Views"
              xmlns:viewModel1="clr-namespace:SerialPortApp.ViewModel"
              xmlns:vml="clr-namespace:SerialPortApp.VML"
+             xmlns:data="clr-namespace:SerialPortApp.Model"
              vml:ViewModelLocator.AutoHookedUpViewModel = "True"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <!--<UserControl.DataContext>
-        <viewModel1:StudentViewModel/>
-    </UserControl.DataContext>-->
-    <Grid> 
-        <StackPanel HorizontalAlignment = "Left"> 
+    <UserControl.Resources> 
+        <DataTemplate DataType = "{x:Type data:Student}"> 
 		
-            <ItemsControl ItemsSource = "{Binding Path = Students}">
+            <StackPanel Orientation = "Horizontal"> 
 			
-                <ItemsControl.ItemTemplate> 
-                    <DataTemplate> 
-                        <StackPanel Orientation = "Horizontal">
-                            <TextBox Text = "{Binding Path = FirstName, Mode = TwoWay}" 
-                                     Width = "100" Margin = "3 5 3 5"/>
-								
-                            <TextBox Text = "{Binding Path = LastName, Mode = TwoWay}" 
-                                     Width = "100" Margin = "0 5 3 5"/>
-								
-                            <TextBlock Text = "{Binding Path = FullName, Mode = OneWay}" 
-                                       Margin = "0 5 3 5"/>
-								
-                        </StackPanel> 
-                    </DataTemplate> 
-                </ItemsControl.ItemTemplate> 
+                <TextBox Text = "{Binding Path = FirstName, Mode = TwoWay}" 
+                         Width = "100" Margin = "3 5 3 5"/> 
+					
+                <TextBox Text = "{Binding Path = LastName, Mode = TwoWay}" 
+                         Width = "100" Margin = "0 5 3 5"/> 
+					
+                <TextBlock Text = "{Binding Path = FullName, Mode = OneWay}" 
+                           Margin = "0 5 3 5"/> 
+					
+            </StackPanel> 
+			
+        </DataTemplate> 
+    </UserControl.Resources>
+	
+    <Grid> 
+        <StackPanel Orientation = "Horizontal"> 
+            <ListBox ItemsSource = "{Binding Students}" 
+                     SelectedItem = "{Binding SelectedStudent}"/> 
 				
-            </ItemsControl> 
-			
+            <Button Content = "Delete" 
+                    Command = "{Binding DeleteCommand}"
+                    HorizontalAlignment = "Left" 
+                    VerticalAlignment = "Top" 
+                    Width = "75" /> 
         </StackPanel> 
-    </Grid> 
+    </Grid>
 </UserControl>
