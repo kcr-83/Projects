@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace SerialPortApp.Model
 {
-    public class StudentModel
-    {
-    }
+    public class StudentModel {}
+	
     public class Student : INotifyPropertyChanged {
         private string firstName; 
         private string lastName;

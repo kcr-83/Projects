@@ -13,9 +13,7 @@ namespace SerialPortApp.ViewModel
             NavCommand = new MyICommandT<string>(OnNav); 
         } 
 		
-        private CustomerListViewModel custListViewModel = new CustomerListViewModel(); 
-		
-        private OrderViewModel orderViewModelModel = new OrderViewModel();
+        private PortViewModel portViewModel = new PortViewModel(); 
 		
         private BindableBase _CurrentViewModel; 
 		
@@ -29,14 +27,10 @@ namespace SerialPortApp.ViewModel
         private void OnNav(string destination) {
 		
             switch (destination) { 
-                case "orders": 
-                    CurrentViewModel = orderViewModelModel; 
-                    break; 
-                case "customers": 
-                default: 
-                    CurrentViewModel = custListViewModel; 
+                case "portSelect": 
+                    CurrentViewModel = portViewModel; 
                     break; 
             } 
         } 
-    }
+    } 
 }

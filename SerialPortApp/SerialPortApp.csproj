@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -56,20 +57,17 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Base\ValidatableBindableBase.cs" />
-    <Compile Include="Model\Customer.cs" />
-    <Compile Include="Model\Order.cs" />
+    <Compile Include="Model\Port.cs" />
+    <Compile Include="Model\SimpleEditableCustomer.cs" />
+    <Compile Include="Model\Student.cs" />
     <Compile Include="MyICommand.cs" />
     <Compile Include="MyICommandT.cs" />
     <Compile Include="Base\BindableBase.cs" />
-    <Compile Include="ViewModel\CustomerListViewModel.cs" />
     <Compile Include="ViewModel\MainWindowViewModel.cs" />
-    <Compile Include="ViewModel\OrderViewModel.cs" />
+    <Compile Include="ViewModel\PortViewModel.cs" />
     <Compile Include="ViewModel\StudentViewModel.cs" />
-    <Compile Include="Views\CustomerListView.xaml.cs">
-      <DependentUpon>CustomerListView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\OrderView.xaml.cs">
-      <DependentUpon>OrderView.xaml</DependentUpon>
+    <Compile Include="Views\PortView.xaml.cs">
+      <DependentUpon>PortView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\StudentView.xaml.cs">
       <DependentUpon>StudentView.xaml</DependentUpon>
@@ -94,11 +92,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Views\CustomerListView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\OrderView.xaml">
+    <Page Include="Views\PortView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -108,7 +102,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\StudentModel.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

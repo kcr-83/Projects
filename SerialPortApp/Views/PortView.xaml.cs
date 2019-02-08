@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace SerialPortApp.Views
 {
     /// <summary>
-    /// Interaction logic for CustomerListView.xaml
+    /// Interaction logic for PortView.xaml
     /// </summary>
-    public partial class CustomerListView : UserControl
+    public partial class PortView : UserControl
     {
-        public CustomerListView()
+        public PortView()
         {
             InitializeComponent();
         }
