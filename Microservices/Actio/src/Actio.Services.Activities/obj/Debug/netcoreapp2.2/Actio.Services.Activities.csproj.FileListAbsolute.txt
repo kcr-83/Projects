@@ -1,0 +1,17 @@
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Activities\bin\Debug\netcoreapp2.2\Actio.Services.Activities.deps.json
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Activities\bin\Debug\netcoreapp2.2\Actio.Services.Activities.runtimeconfig.json
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Activities\bin\Debug\netcoreapp2.2\Actio.Services.Activities.runtimeconfig.dev.json
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Activities\bin\Debug\netcoreapp2.2\Actio.Services.Activities.dll
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Activities\bin\Debug\netcoreapp2.2\Actio.Services.Activities.pdb
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Activities\bin\Debug\netcoreapp2.2\Actio.Common.dll
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Activities\bin\Debug\netcoreapp2.2\Actio.Common.pdb
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Activities\obj\Debug\netcoreapp2.2\Actio.Services.Activities.csprojAssemblyReference.cache
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Activities\obj\Debug\netcoreapp2.2\Actio.Services.Activities.csproj.CoreCompileInputs.cache
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Activities\obj\Debug\netcoreapp2.2\Actio.Services.Activities.RazorAssemblyInfo.cache
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Activities\obj\Debug\netcoreapp2.2\Actio.Services.Activities.RazorAssemblyInfo.cs
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Activities\obj\Debug\netcoreapp2.2\Actio.Services.Activities.AssemblyInfoInputs.cache
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Activities\obj\Debug\netcoreapp2.2\Actio.Services.Activities.AssemblyInfo.cs
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Activities\obj\Debug\netcoreapp2.2\Actio.Services.Activities.RazorTargetAssemblyInfo.cache
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Activities\obj\Debug\netcoreapp2.2\Actio.Services.Activities.csproj.CopyComplete
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Activities\obj\Debug\netcoreapp2.2\Actio.Services.Activities.dll
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Activities\obj\Debug\netcoreapp2.2\Actio.Services.Activities.pdb

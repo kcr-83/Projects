@@ -1,0 +1,17 @@
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Identity\bin\Debug\netcoreapp2.2\Actio.Services.Identity.deps.json
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Identity\bin\Debug\netcoreapp2.2\Actio.Services.Identity.runtimeconfig.json
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Identity\bin\Debug\netcoreapp2.2\Actio.Services.Identity.runtimeconfig.dev.json
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Identity\bin\Debug\netcoreapp2.2\Actio.Services.Identity.dll
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Identity\bin\Debug\netcoreapp2.2\Actio.Services.Identity.pdb
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Identity\bin\Debug\netcoreapp2.2\Actio.Common.dll
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Identity\bin\Debug\netcoreapp2.2\Actio.Common.pdb
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Identity\obj\Debug\netcoreapp2.2\Actio.Services.Identity.csprojAssemblyReference.cache
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Identity\obj\Debug\netcoreapp2.2\Actio.Services.Identity.csproj.CoreCompileInputs.cache
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Identity\obj\Debug\netcoreapp2.2\Actio.Services.Identity.RazorAssemblyInfo.cache
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Identity\obj\Debug\netcoreapp2.2\Actio.Services.Identity.RazorAssemblyInfo.cs
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Identity\obj\Debug\netcoreapp2.2\Actio.Services.Identity.AssemblyInfoInputs.cache
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Identity\obj\Debug\netcoreapp2.2\Actio.Services.Identity.AssemblyInfo.cs
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Identity\obj\Debug\netcoreapp2.2\Actio.Services.Identity.RazorTargetAssemblyInfo.cache
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Identity\obj\Debug\netcoreapp2.2\Actio.Services.Identity.csproj.CopyComplete
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Identity\obj\Debug\netcoreapp2.2\Actio.Services.Identity.dll
+D:\SkyDrive\Pliki -Moje\_Github\Microservices\Actio\src\Actio.Services.Identity\obj\Debug\netcoreapp2.2\Actio.Services.Identity.pdb
