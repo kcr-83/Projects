@@ -63,6 +63,5 @@ namespace TodoApi.Repositories {
                 return result.ToList();
             }
         }
-
     }
 }

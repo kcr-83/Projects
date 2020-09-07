@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "b6f2e31595b025261ad89e088ce0adebb7154230"
+    "signature": ""
   },
   "compilationOptions": {},
   "targets": {
@@ -383,20 +383,6 @@
         "dependencies": {
           "Microsoft.Win32.Primitives": "4.0.1",
           "System.Threading.ThreadPool": "4.0.10"
-        },
-        "runtimeTargets": {
-          "runtime/linux/lib/_._": {
-            "rid": "linux",
-            "assetType": "runtime"
-          },
-          "runtime/osx/lib/_._": {
-            "rid": "osx",
-            "assetType": "runtime"
-          },
-          "runtime/win/lib/_._": {
-            "rid": "win",
-            "assetType": "runtime"
-          }
         }
       },
       "System.Diagnostics.TextWriterTraceListener/4.0.0": {
@@ -404,18 +390,7 @@
           "System.Diagnostics.TraceSource": "4.3.0"
         }
       },
-      "System.Diagnostics.TraceSource/4.3.0": {
-        "runtimeTargets": {
-          "runtime/unix/lib/_._": {
-            "rid": "unix",
-            "assetType": "runtime"
-          },
-          "runtime/win/lib/_._": {
-            "rid": "win",
-            "assetType": "runtime"
-          }
-        }
-      },
+      "System.Diagnostics.TraceSource/4.3.0": {},
       "System.Reflection.TypeExtensions/4.4.0": {},
       "System.Runtime.Loader/4.0.0": {},
       "System.Runtime.Serialization.Json/4.0.2": {},

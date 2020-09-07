@@ -18,7 +18,6 @@ d:\SkyDrive\Pliki -Moje\_Github\.NET Core tutorials\TodoApi\TodoApi\bin\Debug\ne
 d:\SkyDrive\Pliki -Moje\_Github\.NET Core tutorials\TodoApi\TodoApi\bin\Debug\netcoreapp2.2\TodoApi.dll
 d:\SkyDrive\Pliki -Moje\_Github\.NET Core tutorials\TodoApi\TodoApi\bin\Debug\netcoreapp2.2\TodoApi.pdb
 d:\SkyDrive\Pliki -Moje\_Github\.NET Core tutorials\TodoApi\TodoApi\obj\Debug\netcoreapp2.2\TodoApi.csprojAssemblyReference.cache
-d:\SkyDrive\Pliki -Moje\_Github\.NET Core tutorials\TodoApi\TodoApi\obj\Debug\netcoreapp2.2\TodoApi.csproj.CoreCompileInputs.cache
 d:\SkyDrive\Pliki -Moje\_Github\.NET Core tutorials\TodoApi\TodoApi\obj\Debug\netcoreapp2.2\TodoApi.RazorAssemblyInfo.cache
 d:\SkyDrive\Pliki -Moje\_Github\.NET Core tutorials\TodoApi\TodoApi\obj\Debug\netcoreapp2.2\TodoApi.RazorAssemblyInfo.cs
 d:\SkyDrive\Pliki -Moje\_Github\.NET Core tutorials\TodoApi\TodoApi\obj\Debug\netcoreapp2.2\TodoApi.AssemblyInfoInputs.cache
@@ -26,3 +25,6 @@ d:\SkyDrive\Pliki -Moje\_Github\.NET Core tutorials\TodoApi\TodoApi\obj\Debug\ne
 d:\SkyDrive\Pliki -Moje\_Github\.NET Core tutorials\TodoApi\TodoApi\obj\Debug\netcoreapp2.2\TodoApi.RazorTargetAssemblyInfo.cache
 d:\SkyDrive\Pliki -Moje\_Github\.NET Core tutorials\TodoApi\TodoApi\obj\Debug\netcoreapp2.2\TodoApi.dll
 d:\SkyDrive\Pliki -Moje\_Github\.NET Core tutorials\TodoApi\TodoApi\obj\Debug\netcoreapp2.2\TodoApi.pdb
+d:\SkyDrive\Pliki -Moje\_Github\.NET Core tutorials\TodoApi\TodoApi\bin\Debug\netcoreapp2.2\appsettings.Development.json
+d:\SkyDrive\Pliki -Moje\_Github\.NET Core tutorials\TodoApi\TodoApi\bin\Debug\netcoreapp2.2\appsettings.json
+d:\SkyDrive\Pliki -Moje\_Github\.NET Core tutorials\TodoApi\TodoApi\bin\Debug\netcoreapp2.2\Properties\launchSettings.json

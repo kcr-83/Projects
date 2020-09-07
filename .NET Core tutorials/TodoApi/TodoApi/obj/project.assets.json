@@ -12150,11 +12150,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SkyDrive\\Pliki -Moje\\_Github\\.NET Core tutorials\\TodoApi\\TodoApi\\TodoApi.csproj",
+      "projectUniqueName": "d:\\SkyDrive\\Pliki -Moje\\_Github\\.NET Core tutorials\\TodoApi\\TodoApi\\TodoApi.csproj",
       "projectName": "TodoApi",
-      "projectPath": "D:\\SkyDrive\\Pliki -Moje\\_Github\\.NET Core tutorials\\TodoApi\\TodoApi\\TodoApi.csproj",
+      "projectPath": "d:\\SkyDrive\\Pliki -Moje\\_Github\\.NET Core tutorials\\TodoApi\\TodoApi\\TodoApi.csproj",
       "packagesPath": "C:\\Users\\Comarch\\.nuget\\packages\\",
-      "outputPath": "D:\\SkyDrive\\Pliki -Moje\\_Github\\.NET Core tutorials\\TodoApi\\TodoApi\\obj\\",
+      "outputPath": "d:\\SkyDrive\\Pliki -Moje\\_Github\\.NET Core tutorials\\TodoApi\\TodoApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12211,10 +12211,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

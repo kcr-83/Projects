@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
@@ -32,13 +33,30 @@ namespace TodoApi.Tests {
         public async Task GetTest () {
             var mockRepo = new Mock<IUsersRepository> ();
             mockRepo.Setup (repo => repo.GetUsersList ()).ReturnsAsync (GetTestUsers ());
-            var controller = new UsersController(mockRepo.Object);
-            
-            var result = await controller.Get();
+            var controller = new UsersController (mockRepo.Object);
 
-            var viewResult = Assert.IsType<ViewResult>(result);
-            var model = Assert.IsAssignableFrom<IEnumerable<object>>(viewResult.ViewData.Model);
-            Assert.Equal(2, model.);
+            var result = await controller.Get ();
+
+            var viewResult = Assert.IsType<ActionResult<List<User>>> (result);
+            Assert.Equal (2, 2);
+            var model = Assert.IsAssignableFrom<IEnumerable<User>> (viewResult.Value);
+            Assert.Equal (2, model.Count ());
+        }
+
+        [Theory]
+        [InlineData (1)]
+        [InlineData (2)]
+        [InlineData (3)]
+        public async Task GetById (int userId) {
+            var mockRepo = new Mock<IUsersRepository> ();
+            mockRepo.Setup (repo => repo.GetUserDetails (userId)).ReturnsAsync (GetTestUsers ().FirstOrDefault (n => n.Id == userId));
+            var controller = new UsersController (mockRepo.Object);
+
+            var result = await controller.GetByID (userId);
+
+            var viewResult = Assert.IsType<ActionResult<User>> (result);
+
+            Assert.IsAssignableFrom<User> (viewResult.Value);
         }
     }
 }

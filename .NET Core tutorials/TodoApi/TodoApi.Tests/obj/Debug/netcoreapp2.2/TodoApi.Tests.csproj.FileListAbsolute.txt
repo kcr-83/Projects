@@ -9,9 +9,11 @@ D:\SkyDrive\Pliki -Moje\_Github\.NET Core tutorials\TodoApi\TodoApi.Tests\bin\De
 D:\SkyDrive\Pliki -Moje\_Github\.NET Core tutorials\TodoApi\TodoApi.Tests\bin\Debug\netcoreapp2.2\TodoApi.dll
 D:\SkyDrive\Pliki -Moje\_Github\.NET Core tutorials\TodoApi\TodoApi.Tests\bin\Debug\netcoreapp2.2\TodoApi.pdb
 D:\SkyDrive\Pliki -Moje\_Github\.NET Core tutorials\TodoApi\TodoApi.Tests\obj\Debug\netcoreapp2.2\TodoApi.Tests.csprojAssemblyReference.cache
-D:\SkyDrive\Pliki -Moje\_Github\.NET Core tutorials\TodoApi\TodoApi.Tests\obj\Debug\netcoreapp2.2\TodoApi.Tests.csproj.CoreCompileInputs.cache
 D:\SkyDrive\Pliki -Moje\_Github\.NET Core tutorials\TodoApi\TodoApi.Tests\obj\Debug\netcoreapp2.2\TodoApi.Tests.AssemblyInfoInputs.cache
 D:\SkyDrive\Pliki -Moje\_Github\.NET Core tutorials\TodoApi\TodoApi.Tests\obj\Debug\netcoreapp2.2\TodoApi.Tests.AssemblyInfo.cs
 D:\SkyDrive\Pliki -Moje\_Github\.NET Core tutorials\TodoApi\TodoApi.Tests\obj\Debug\netcoreapp2.2\TodoApi.Tests.csproj.CopyComplete
 D:\SkyDrive\Pliki -Moje\_Github\.NET Core tutorials\TodoApi\TodoApi.Tests\obj\Debug\netcoreapp2.2\TodoApi.Tests.dll
 D:\SkyDrive\Pliki -Moje\_Github\.NET Core tutorials\TodoApi\TodoApi.Tests\obj\Debug\netcoreapp2.2\TodoApi.Tests.pdb
+d:\SkyDrive\Pliki -Moje\_Github\.NET Core tutorials\TodoApi\TodoApi.Tests\bin\Debug\netcoreapp2.2\appsettings.Development.json
+d:\SkyDrive\Pliki -Moje\_Github\.NET Core tutorials\TodoApi\TodoApi.Tests\bin\Debug\netcoreapp2.2\appsettings.json
+d:\SkyDrive\Pliki -Moje\_Github\.NET Core tutorials\TodoApi\TodoApi.Tests\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
