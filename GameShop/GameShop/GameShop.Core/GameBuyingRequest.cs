@@ -2,15 +2,11 @@
 
 namespace GameShop.Core
 {
-    public class GameBuyingRequest
+    public class GameBuyingRequest : GameBuyingBase
     {
         public GameBuyingRequest()
         {
         }
 
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string Email { get; set; }
-        public DateTime Date { get; set; }
     }
 }
