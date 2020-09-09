@@ -9,9 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{C30D2517-9587-4B58-A465-83C4E2187C5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameShop.Core.Test", "GameShop.Core.Test\GameShop.Core.Test.csproj", "{8D8F33F9-1522-43E2-B2D9-5C221C0ADB87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameShop.Core.Test", "GameShop.Core.Test\GameShop.Core.Test.csproj", "{8D8F33F9-1522-43E2-B2D9-5C221C0ADB87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameShop.Core", "GameShop.Core\GameShop.Core.csproj", "{68D4CF6D-BB26-4999-8847-D52C753B2DD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameShop.Core", "GameShop.Core\GameShop.Core.csproj", "{68D4CF6D-BB26-4999-8847-D52C753B2DD3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FEF0C20F-F746-46BA-AE2F-F201AC497EF3}"
 	ProjectSection(SolutionItems) = preProject

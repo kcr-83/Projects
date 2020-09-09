@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\OneDrive\\Pliki -Moje\\_Github\\GameShop\\GameShop\\GameShop.Core.Test\\GameShop.Core.Test.csproj": {}
+    "D:\\SkyDrive\\Pliki -Moje\\_Github\\GameShop\\GameShop\\GameShop.Core.Test\\GameShop.Core.Test.csproj": {}
   },
   "projects": {
-    "D:\\OneDrive\\Pliki -Moje\\_Github\\GameShop\\GameShop\\GameShop.Core.Test\\GameShop.Core.Test.csproj": {
+    "D:\\SkyDrive\\Pliki -Moje\\_Github\\GameShop\\GameShop\\GameShop.Core.Test\\GameShop.Core.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OneDrive\\Pliki -Moje\\_Github\\GameShop\\GameShop\\GameShop.Core.Test\\GameShop.Core.Test.csproj",
+        "projectUniqueName": "D:\\SkyDrive\\Pliki -Moje\\_Github\\GameShop\\GameShop\\GameShop.Core.Test\\GameShop.Core.Test.csproj",
         "projectName": "GameShop.Core.Test",
-        "projectPath": "D:\\OneDrive\\Pliki -Moje\\_Github\\GameShop\\GameShop\\GameShop.Core.Test\\GameShop.Core.Test.csproj",
-        "packagesPath": "C:\\Users\\LROJEK\\.nuget\\packages\\",
-        "outputPath": "D:\\OneDrive\\Pliki -Moje\\_Github\\GameShop\\GameShop\\GameShop.Core.Test\\obj\\",
+        "projectPath": "D:\\SkyDrive\\Pliki -Moje\\_Github\\GameShop\\GameShop\\GameShop.Core.Test\\GameShop.Core.Test.csproj",
+        "packagesPath": "C:\\Users\\Comarch\\.nuget\\packages\\",
+        "outputPath": "D:\\SkyDrive\\Pliki -Moje\\_Github\\GameShop\\GameShop\\GameShop.Core.Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\LROJEK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Comarch\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,14 +25,13 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\LROJEK\\.dotnet\\NuGetFallbackFolder": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\OneDrive\\Pliki -Moje\\_Github\\GameShop\\GameShop\\GameShop.Core\\GameShop.Core.csproj": {
-                "projectPath": "D:\\OneDrive\\Pliki -Moje\\_Github\\GameShop\\GameShop\\GameShop.Core\\GameShop.Core.csproj"
+              "D:\\SkyDrive\\Pliki -Moje\\_Github\\GameShop\\GameShop\\GameShop.Core\\GameShop.Core.csproj": {
+                "projectPath": "D:\\SkyDrive\\Pliki -Moje\\_Github\\GameShop\\GameShop\\GameShop.Core\\GameShop.Core.csproj"
               }
             }
           }
@@ -49,6 +48,10 @@
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.5.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.14.5, )"
             },
             "coverlet.collector": {
               "target": "Package",
@@ -82,20 +85,20 @@
         }
       }
     },
-    "D:\\OneDrive\\Pliki -Moje\\_Github\\GameShop\\GameShop\\GameShop.Core\\GameShop.Core.csproj": {
+    "D:\\SkyDrive\\Pliki -Moje\\_Github\\GameShop\\GameShop\\GameShop.Core\\GameShop.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OneDrive\\Pliki -Moje\\_Github\\GameShop\\GameShop\\GameShop.Core\\GameShop.Core.csproj",
+        "projectUniqueName": "D:\\SkyDrive\\Pliki -Moje\\_Github\\GameShop\\GameShop\\GameShop.Core\\GameShop.Core.csproj",
         "projectName": "GameShop.Core",
-        "projectPath": "D:\\OneDrive\\Pliki -Moje\\_Github\\GameShop\\GameShop\\GameShop.Core\\GameShop.Core.csproj",
-        "packagesPath": "C:\\Users\\LROJEK\\.nuget\\packages\\",
-        "outputPath": "D:\\OneDrive\\Pliki -Moje\\_Github\\GameShop\\GameShop\\GameShop.Core\\obj\\",
+        "projectPath": "D:\\SkyDrive\\Pliki -Moje\\_Github\\GameShop\\GameShop\\GameShop.Core\\GameShop.Core.csproj",
+        "packagesPath": "C:\\Users\\Comarch\\.nuget\\packages\\",
+        "outputPath": "D:\\SkyDrive\\Pliki -Moje\\_Github\\GameShop\\GameShop\\GameShop.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\LROJEK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Comarch\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -103,7 +106,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\LROJEK\\.dotnet\\NuGetFallbackFolder": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

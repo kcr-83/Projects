@@ -30,7 +30,7 @@
   },
   "libraries": {
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "L6J2+ztMsm34VtJN/RQVc7X2sSplO1XlDu1+GmBQvtnwq12YIGIx6i5LUTg2Rksq1lxQ1J6Qh4PqYuseihgkkw==",
+      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
@@ -178,23 +178,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LROJEK\\.nuget\\packages\\": {},
+    "C:\\Users\\Comarch\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\OneDrive\\Pliki -Moje\\_Github\\GameShop\\GameShop\\GameShop.Core\\GameShop.Core.csproj",
+      "projectUniqueName": "D:\\SkyDrive\\Pliki -Moje\\_Github\\GameShop\\GameShop\\GameShop.Core\\GameShop.Core.csproj",
       "projectName": "GameShop.Core",
-      "projectPath": "D:\\OneDrive\\Pliki -Moje\\_Github\\GameShop\\GameShop\\GameShop.Core\\GameShop.Core.csproj",
-      "packagesPath": "C:\\Users\\LROJEK\\.nuget\\packages\\",
-      "outputPath": "D:\\OneDrive\\Pliki -Moje\\_Github\\GameShop\\GameShop\\GameShop.Core\\obj\\",
+      "projectPath": "D:\\SkyDrive\\Pliki -Moje\\_Github\\GameShop\\GameShop\\GameShop.Core\\GameShop.Core.csproj",
+      "packagesPath": "C:\\Users\\Comarch\\.nuget\\packages\\",
+      "outputPath": "D:\\SkyDrive\\Pliki -Moje\\_Github\\GameShop\\GameShop\\GameShop.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\LROJEK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Comarch\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -202,7 +202,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\LROJEK\\.dotnet\\NuGetFallbackFolder": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

@@ -89,10 +89,12 @@ D:\OneDrive\Pliki -Moje\_Github\GameShop\GameShop\GameShop.Core.Test\bin\Debug\n
 D:\OneDrive\Pliki -Moje\_Github\GameShop\GameShop\GameShop.Core.Test\obj\Debug\netcoreapp3.1\GameShop.Core.Test.csprojAssemblyReference.cache
 D:\OneDrive\Pliki -Moje\_Github\GameShop\GameShop\GameShop.Core.Test\obj\Debug\netcoreapp3.1\GameShop.Core.Test.AssemblyInfoInputs.cache
 D:\OneDrive\Pliki -Moje\_Github\GameShop\GameShop\GameShop.Core.Test\obj\Debug\netcoreapp3.1\GameShop.Core.Test.AssemblyInfo.cs
-D:\OneDrive\Pliki -Moje\_Github\GameShop\GameShop\GameShop.Core.Test\obj\Debug\netcoreapp3.1\GameShop.Core.Test.csproj.CoreCompileInputs.cache
 D:\OneDrive\Pliki -Moje\_Github\GameShop\GameShop\GameShop.Core.Test\obj\Debug\netcoreapp3.1\GameShop.Core.Test.csproj.CopyComplete
 D:\OneDrive\Pliki -Moje\_Github\GameShop\GameShop\GameShop.Core.Test\obj\Debug\netcoreapp3.1\GameShop.Core.Test.dll
 D:\OneDrive\Pliki -Moje\_Github\GameShop\GameShop\GameShop.Core.Test\obj\Debug\netcoreapp3.1\GameShop.Core.Test.pdb
 D:\OneDrive\Pliki -Moje\_Github\GameShop\GameShop\GameShop.Core.Test\obj\Debug\netcoreapp3.1\GameShop.Core.Test.genruntimeconfig.cache
 D:\OneDrive\Pliki -Moje\_Github\GameShop\GameShop\GameShop.Core.Test\bin\Debug\netcoreapp3.1\GameShop.Core.dll
 D:\OneDrive\Pliki -Moje\_Github\GameShop\GameShop\GameShop.Core.Test\bin\Debug\netcoreapp3.1\GameShop.Core.pdb
+D:\OneDrive\Pliki -Moje\_Github\GameShop\GameShop\GameShop.Core.Test\obj\Debug\netcoreapp3.1\GameShop.Core.Test.csproj.CoreCompileInputs.cache
+D:\OneDrive\Pliki -Moje\_Github\GameShop\GameShop\GameShop.Core.Test\bin\Debug\netcoreapp3.1\Castle.Core.dll
+D:\OneDrive\Pliki -Moje\_Github\GameShop\GameShop\GameShop.Core.Test\bin\Debug\netcoreapp3.1\Moq.dll
