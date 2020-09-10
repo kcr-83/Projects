@@ -1,0 +1,10 @@
+C:\Users\Comarch\source\repos\SampleWebApiMef\ServiceOne\obj\Debug\netcoreapp3.1\ServiceOne.csprojAssemblyReference.cache
+C:\Users\Comarch\source\repos\SampleWebApiMef\ServiceOne\obj\Debug\netcoreapp3.1\ServiceOne.AssemblyInfoInputs.cache
+C:\Users\Comarch\source\repos\SampleWebApiMef\ServiceOne\obj\Debug\netcoreapp3.1\ServiceOne.AssemblyInfo.cs
+C:\Users\Comarch\source\repos\SampleWebApiMef\ServiceOne\obj\Debug\netcoreapp3.1\ServiceOne.csproj.CoreCompileInputs.cache
+C:\Users\Comarch\source\repos\SampleWebApiMef\SampleWebApiMef\bin\netcoreapp3.1\ServiceOne.deps.json
+C:\Users\Comarch\source\repos\SampleWebApiMef\SampleWebApiMef\bin\netcoreapp3.1\ServiceOne.dll
+C:\Users\Comarch\source\repos\SampleWebApiMef\SampleWebApiMef\bin\netcoreapp3.1\ServiceOne.pdb
+C:\Users\Comarch\source\repos\SampleWebApiMef\ServiceOne\obj\Debug\netcoreapp3.1\ServiceOne.csproj.CopyComplete
+C:\Users\Comarch\source\repos\SampleWebApiMef\ServiceOne\obj\Debug\netcoreapp3.1\ServiceOne.dll
+C:\Users\Comarch\source\repos\SampleWebApiMef\ServiceOne\obj\Debug\netcoreapp3.1\ServiceOne.pdb

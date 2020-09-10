@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "4Zz4Par0cV19v+NzEkP7p8zwA40Vb+3DPadQOdvaqQPkdehBEBoefazHWZqmuYT5jg+9l4E/SOwD7y5Ox5D6pQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Comarch\\source\\repos\\SampleWebApiMef\\ServiceOne\\ServiceOne.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Comarch\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.8\\microsoft.extensions.dependencyinjection.abstractions.3.1.8.nupkg.sha512",
+    "C:\\Users\\Comarch\\.nuget\\packages\\system.componentmodel.composition\\4.7.0\\system.componentmodel.composition.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

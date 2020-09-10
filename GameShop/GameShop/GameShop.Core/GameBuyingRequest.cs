@@ -8,5 +8,7 @@ namespace GameShop.Core
         {
         }
 
+        public Game GameToBuy { get; set; }
     }
+
 }

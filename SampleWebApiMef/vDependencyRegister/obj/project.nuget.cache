@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "RQTKDC6V5k15zBNqZI6+qkKCa5zRK9BQIWYrC+yq5fGMg9Ao+9zZLKbofrNVLiGG9dsRF45F/V7mYF0flf+y6Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Comarch\\source\\repos\\SampleWebApiMef\\vDependencyRegister\\vDependencyResolver.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Comarch\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.8\\microsoft.extensions.dependencyinjection.abstractions.3.1.8.nupkg.sha512",
+    "C:\\Users\\Comarch\\.nuget\\packages\\system.componentmodel.composition\\4.7.0\\system.componentmodel.composition.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,9 @@
+C:\Users\Comarch\source\repos\SampleWebApiMef\vDependencyRegister\bin\Debug\netcoreapp3.1\vDependencyResolver.deps.json
+C:\Users\Comarch\source\repos\SampleWebApiMef\vDependencyRegister\bin\Debug\netcoreapp3.1\vDependencyResolver.dll
+C:\Users\Comarch\source\repos\SampleWebApiMef\vDependencyRegister\obj\Debug\netcoreapp3.1\vDependencyResolver.AssemblyInfoInputs.cache
+C:\Users\Comarch\source\repos\SampleWebApiMef\vDependencyRegister\obj\Debug\netcoreapp3.1\vDependencyResolver.AssemblyInfo.cs
+C:\Users\Comarch\source\repos\SampleWebApiMef\vDependencyRegister\bin\Debug\netcoreapp3.1\vDependencyResolver.pdb
+C:\Users\Comarch\source\repos\SampleWebApiMef\vDependencyRegister\obj\Debug\netcoreapp3.1\vDependencyResolver.csproj.CoreCompileInputs.cache
+C:\Users\Comarch\source\repos\SampleWebApiMef\vDependencyRegister\obj\Debug\netcoreapp3.1\vDependencyResolver.dll
+C:\Users\Comarch\source\repos\SampleWebApiMef\vDependencyRegister\obj\Debug\netcoreapp3.1\vDependencyResolver.pdb
+C:\Users\Comarch\source\repos\SampleWebApiMef\vDependencyRegister\obj\Debug\netcoreapp3.1\vDependencyResolver.csprojAssemblyReference.cache

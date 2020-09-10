@@ -6,6 +6,6 @@ namespace GameShop.Core
 {
     public interface IGameBuyingRepository
     {
-        void Save(GameBought gameBought);
+        int Save(GameBought gameBought);
     }
 }

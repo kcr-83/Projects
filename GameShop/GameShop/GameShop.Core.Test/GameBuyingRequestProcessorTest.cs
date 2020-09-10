@@ -11,22 +11,35 @@ namespace GameShop.Core
         private GameBuyingRequestProcessor _processor;
         private readonly GameBuyingRequest _request;
         private Mock<IGameBuyingRepository> _repositoryMock;
+        private Mock<IGameRepository> _repositoryGameMock;
+        private bool _isGameAvailable = true;
 
         public GameBuyingRequestProcessorTest()
         {
-            
+
             _repositoryMock = new Mock<IGameBuyingRepository>();
-            _processor = new GameBuyingRequestProcessor(_repositoryMock.Object);
+            _repositoryGameMock = new Mock<IGameRepository>();
+
             // Arrange
             _request = new GameBuyingRequest()
             {
                 FirstName = "Cezary",
                 LastName = "Walenciuk",
                 Email = "walenciukc@gmail.com",
-                Date = DateTime.Now
+                Date = DateTime.Now,
+                GameToBuy = new Game() { Id = 7 }
             };
+            _repositoryGameMock.Setup(x => x.IsGameAvailable(_request.GameToBuy)).Returns(() => { return _isGameAvailable; });
+            _processor = new GameBuyingRequestProcessor(_repositoryMock.Object, _repositoryGameMock.Object);
         }
-
+        [Fact]
+        public void ShouldNotSaveBoughtGameIfGameIsNotAvailable()
+        {
+            _isGameAvailable = false;
+            _processor.BuyGame(_request);
+            _isGameAvailable = true;
+            _repositoryMock.Verify(x => x.Save(It.IsAny<GameBought>()), Times.Never);
+        }
         [Fact]
         public void ShouldReturnStatusTrueWhenSendedCorrectValues()
         {
@@ -34,14 +47,13 @@ namespace GameShop.Core
             GameBuyingResult result = _processor.BuyGame(_request);
 
             //Assert
-            Assert.Equal(true, result.IsStatusOk);
-            Assert.Equal(0, result.Errors.Count);
+            Assert.Equal(GameBuyingResultCode.Success, result.StatusCode);
         }
         [Fact]
         public void ShouldReturnBuyingGameResultWhitRequestValues()
         {
             // Arrange
-            
+
 
             //Act
             GameBuyingResult result = _processor.BuyGame(_request);
@@ -88,6 +100,33 @@ namespace GameShop.Core
             Assert.Equal(_request.LastName, savedgameBought.LastName);
             Assert.Equal(_request.Email, savedgameBought.Email);
             Assert.Equal(_request.Date, savedgameBought.Date);
+            Assert.Equal(_request.GameToBuy.Id, savedgameBought.GameId);
+        }
+        [Theory]
+        [InlineData(GameBuyingResultCode.Success, true)]
+        [InlineData(GameBuyingResultCode.GameIsNotAvailable, false)]
+        public void ShouldReturnExpectedResultCode
+    (GameBuyingResultCode expectedResultCode, bool IsGameAvailable)
+        {
+            _isGameAvailable = IsGameAvailable;
+
+            var result = _processor.BuyGame(_request);
+
+            Assert.Equal(expectedResultCode, result.StatusCode);
+        }
+        [Theory]
+        [InlineData(11, true)]
+        [InlineData(null, false)]
+        public void ShouldReturnExpectedBoughtGameId(int? expectedPurchaseId, bool IsGameAvailable)
+        {
+            _isGameAvailable = IsGameAvailable;
+            if (IsGameAvailable)
+            {
+                _repositoryMock.Setup(x => x.Save(It.IsAny<GameBought>())).Returns(11);
+            }
+            var result = _processor.BuyGame(_request);
+
+            Assert.Equal(expectedPurchaseId, result.PurchaseId);
         }
     }
 }

@@ -5,10 +5,13 @@ namespace GameShop.Core
     public class GameBuyingRequestProcessor
     {
         private IGameBuyingRepository _repository;
+        private IGameRepository _gameRepository;
 
-        public GameBuyingRequestProcessor(IGameBuyingRepository repository)
+        public GameBuyingRequestProcessor(IGameBuyingRepository repository,
+    IGameRepository gameRepository)
         {
-            this._repository = repository;
+            _repository = repository;
+            _gameRepository = gameRepository;
         }
 
         private static T Create<T>(GameBuyingRequest request) where T : GameBuyingBase, new()
@@ -28,13 +31,19 @@ namespace GameShop.Core
 
 
             GameBought gameBought = Create<GameBought>(request);
-
-            _repository.Save(gameBought);
-
+            gameBought.GameId = request.GameToBuy.Id;
             var result = Create<GameBuyingResult>(request);
+            if (_gameRepository.IsGameAvailable(request.GameToBuy)){
+                
+                result.PurchaseId = _repository.Save(gameBought);
+                result.StatusCode = GameBuyingResultCode.Success;
+            }
+            else
+            {
+                result.StatusCode = GameBuyingResultCode.GameIsNotAvailable;
+            }      
 
-            result.IsStatusOk = true;
-            result.Errors = new System.Collections.Generic.List<string>();
+            
 
             return result;
         }

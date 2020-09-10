@@ -1,0 +1,10 @@
+C:\Users\Comarch\source\repos\SampleWebApiMef\SampleWebApiMef\bin\netcoreapp3.1\NewService.deps.json
+C:\Users\Comarch\source\repos\SampleWebApiMef\SampleWebApiMef\bin\netcoreapp3.1\NewService.dll
+C:\Users\Comarch\source\repos\SampleWebApiMef\SampleWebApiMef\bin\netcoreapp3.1\NewService.pdb
+C:\Users\Comarch\source\repos\SampleWebApiMef\NewService\obj\Debug\netcoreapp3.1\NewService.csprojAssemblyReference.cache
+C:\Users\Comarch\source\repos\SampleWebApiMef\NewService\obj\Debug\netcoreapp3.1\NewService.AssemblyInfoInputs.cache
+C:\Users\Comarch\source\repos\SampleWebApiMef\NewService\obj\Debug\netcoreapp3.1\NewService.AssemblyInfo.cs
+C:\Users\Comarch\source\repos\SampleWebApiMef\NewService\obj\Debug\netcoreapp3.1\NewService.csproj.CoreCompileInputs.cache
+C:\Users\Comarch\source\repos\SampleWebApiMef\NewService\obj\Debug\netcoreapp3.1\NewService.csproj.CopyComplete
+C:\Users\Comarch\source\repos\SampleWebApiMef\NewService\obj\Debug\netcoreapp3.1\NewService.dll
+C:\Users\Comarch\source\repos\SampleWebApiMef\NewService\obj\Debug\netcoreapp3.1\NewService.pdb

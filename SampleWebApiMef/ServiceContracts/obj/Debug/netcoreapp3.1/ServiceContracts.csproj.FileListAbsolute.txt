@@ -1,0 +1,8 @@
+C:\Users\Comarch\source\repos\SampleWebApiMef\ServiceContracts\bin\Debug\netcoreapp3.1\ServiceContracts.deps.json
+C:\Users\Comarch\source\repos\SampleWebApiMef\ServiceContracts\bin\Debug\netcoreapp3.1\ServiceContracts.dll
+C:\Users\Comarch\source\repos\SampleWebApiMef\ServiceContracts\bin\Debug\netcoreapp3.1\ServiceContracts.pdb
+C:\Users\Comarch\source\repos\SampleWebApiMef\ServiceContracts\obj\Debug\netcoreapp3.1\ServiceContracts.AssemblyInfoInputs.cache
+C:\Users\Comarch\source\repos\SampleWebApiMef\ServiceContracts\obj\Debug\netcoreapp3.1\ServiceContracts.AssemblyInfo.cs
+C:\Users\Comarch\source\repos\SampleWebApiMef\ServiceContracts\obj\Debug\netcoreapp3.1\ServiceContracts.csproj.CoreCompileInputs.cache
+C:\Users\Comarch\source\repos\SampleWebApiMef\ServiceContracts\obj\Debug\netcoreapp3.1\ServiceContracts.dll
+C:\Users\Comarch\source\repos\SampleWebApiMef\ServiceContracts\obj\Debug\netcoreapp3.1\ServiceContracts.pdb
