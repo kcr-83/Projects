@@ -2,8 +2,9 @@
 
 namespace GameShop.Core
 {
-    public class GameBought : GameBuyingBase
+    public class GameBoughtOrder : GameBuyingBase
     {
+        public int Id { get; set; }
         public int GameId { get; set; }
     }
 }

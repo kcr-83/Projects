@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "SZoeSIdmoMLsubfG7MbzAc5smxqZApL5MtE3nz/ZPuk4gDyHOaF8iDiYcEE8CNMSAZ3X2rWVbVQnFnRgU32N3w==",
+  "success": true,
+  "projectFilePath": "D:\\SkyDrive\\Pliki -Moje\\_Github\\GameShop\\GameShop\\GameShop.DataAccess\\GameShop.DataAccess.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Comarch\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

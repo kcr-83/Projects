@@ -10,14 +10,14 @@ namespace GameShop.Core
     {
         private GameBuyingRequestProcessor _processor;
         private readonly GameBuyingRequest _request;
-        private Mock<IGameBuyingRepository> _repositoryMock;
+        private Mock<IGameBoughtOrderRepository> _repositoryMock;
         private Mock<IGameRepository> _repositoryGameMock;
         private bool _isGameAvailable = true;
 
         public GameBuyingRequestProcessorTest()
         {
 
-            _repositoryMock = new Mock<IGameBuyingRepository>();
+            _repositoryMock = new Mock<IGameBoughtOrderRepository>();
             _repositoryGameMock = new Mock<IGameRepository>();
 
             // Arrange
@@ -38,7 +38,7 @@ namespace GameShop.Core
             _isGameAvailable = false;
             _processor.BuyGame(_request);
             _isGameAvailable = true;
-            _repositoryMock.Verify(x => x.Save(It.IsAny<GameBought>()), Times.Never);
+            _repositoryMock.Verify(x => x.Save(It.IsAny<GameBoughtOrder>()), Times.Never);
         }
         [Fact]
         public void ShouldReturnStatusTrueWhenSendedCorrectValues()
@@ -80,11 +80,11 @@ namespace GameShop.Core
         [Fact]
         public void ShouldSaveBoughtGame()
         {
-            GameBought savedgameBought = null;
+            GameBoughtOrder savedgameBought = null;
 
-            _repositoryMock.Setup(x => x.Save(It.IsAny<GameBought>()))
+            _repositoryMock.Setup(x => x.Save(It.IsAny<GameBoughtOrder>()))
 
-                .Callback<GameBought>(game =>
+                .Callback<GameBoughtOrder>(game =>
                 {
                     savedgameBought = game;
                 }
@@ -93,7 +93,7 @@ namespace GameShop.Core
 
             _processor.BuyGame(_request);
 
-            _repositoryMock.Verify(x => x.Save(It.IsAny<GameBought>()), Times.Once);
+            _repositoryMock.Verify(x => x.Save(It.IsAny<GameBoughtOrder>()), Times.Once);
 
             Assert.NotNull(savedgameBought);
             Assert.Equal(_request.FirstName, savedgameBought.FirstName);
@@ -122,7 +122,7 @@ namespace GameShop.Core
             _isGameAvailable = IsGameAvailable;
             if (IsGameAvailable)
             {
-                _repositoryMock.Setup(x => x.Save(It.IsAny<GameBought>())).Returns(11);
+                _repositoryMock.Setup(x => x.Save(It.IsAny<GameBoughtOrder>())).Returns(11);
             }
             var result = _processor.BuyGame(_request);
 

@@ -4,10 +4,10 @@ namespace GameShop.Core
 {
     public class GameBuyingRequestProcessor
     {
-        private IGameBuyingRepository _repository;
+        private IGameBoughtOrderRepository _repository;
         private IGameRepository _gameRepository;
 
-        public GameBuyingRequestProcessor(IGameBuyingRepository repository,
+        public GameBuyingRequestProcessor(IGameBoughtOrderRepository repository,
     IGameRepository gameRepository)
         {
             _repository = repository;
@@ -30,7 +30,7 @@ namespace GameShop.Core
                 throw new ArgumentNullException(nameof(request));
 
 
-            GameBought gameBought = Create<GameBought>(request);
+            GameBoughtOrder gameBought = Create<GameBoughtOrder>(request);
             gameBought.GameId = request.GameToBuy.Id;
             var result = Create<GameBuyingResult>(request);
             if (_gameRepository.IsGameAvailable(request.GameToBuy)){
