@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GameShop.Core.Interface
+namespace GameShop.Core
 {
     public interface IGameBuyingRequestProcessor
     {

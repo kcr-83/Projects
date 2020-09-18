@@ -2,7 +2,7 @@
 
 namespace GameShop.Core
 {
-    public class GameBuyingRequestProcessor
+    public class GameBuyingRequestProcessor : IGameBuyingRequestProcessor
     {
         private IGameBoughtOrderRepository _repository;
         private IGameRepository _gameRepository;
