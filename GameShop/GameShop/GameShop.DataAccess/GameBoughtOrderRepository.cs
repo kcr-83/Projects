@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace GameShop.DataAccess
 {
-    internal class GameBoughtOrderRepository : IGameBoughtOrderRepository
+    public class GameBoughtOrderRepository : IGameBoughtOrderRepository
     {
         private GameBoughtOrderContext _context;
 
