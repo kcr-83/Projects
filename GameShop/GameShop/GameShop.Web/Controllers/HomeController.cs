@@ -34,12 +34,23 @@ namespace GameShop.Web.Controllers
                 Id = buyGame.Game.Id,
                 Name = buyGame.Game.Name
             };
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                _processor.BuyGame(request);
+                return View();               
             }
+            var result = _processor.BuyGame(request);
+            if (result.StatusCode == GameBuyingResultCode.GameIsNotAvailable)
+                return View
+                    (
+                    "Views/Home/GameIsNotAvaliable.cshtml",
+                        new ErrorModel()
+                        {
+                            Message = "Nie ma juz gry w magazynie"
+                        }
+                    );
 
-            return View();
+            return View("Views/Home/Success.cshtml");
         }
+
     }
 }

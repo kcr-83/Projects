@@ -1,6 +1,7 @@
 ﻿using GameShop.Core;
 using GameShop.Web.Controllers;
 using GameShop.Web.Model;
+using Microsoft.AspNetCore.Mvc;
 using Moq;
 using System;
 using System.Collections.Generic;
@@ -11,14 +12,17 @@ namespace GameShop.Web
 {
     public class HomeControllerTests
     {
-        [Fact]
-        public void ShouldCallGameBuyingRequestProcessor()
-        {
-            //Arange
-            var processorMock = new Mock<IGameBuyingRequestProcessor>();
-            var controller = new HomeController(processorMock.Object);
+        private Mock<IGameBuyingRequestProcessor> _processorMock;
+        private HomeController _homeController;
+        private GameBuyModel _buyGameModel;
+        private GameBuyingRequest _request;
 
-            var buyGame = new GameBuyModel()
+        public HomeControllerTests()
+        {
+            _processorMock = new Mock<IGameBuyingRequestProcessor>();
+            _homeController = new HomeController(_processorMock.Object);
+
+            _buyGameModel = new GameBuyModel()
             {
                 FirstName = "Cezary",
                 Email = "Walenciuk@c.com",
@@ -30,7 +34,7 @@ namespace GameShop.Web
                 }
             };
 
-            var request = new GameBuyingRequest()
+            _request = new GameBuyingRequest()
             {
                 FirstName = "Cezary",
                 LastName = "Walenciuk",
@@ -39,19 +43,27 @@ namespace GameShop.Web
                 GameToBuy = new Game() { Id = 99, Name = "Mortal Kombat" }
             };
 
+            _processorMock.Setup(x => x.BuyGame(It.IsAny<GameBuyingRequest>()))
+                .Returns(new GameBuyingResult()
+                {
+                    PurchaseId = 11,
+                    StatusCode = GameBuyingResultCode.Success
+                });
+        }
+        [Fact]
+        public void ShouldCallGameBuyingRequestProcessor()
+        {
             //Act
-            controller.BuyGame(buyGame);
+            _homeController.BuyGame(_buyGameModel);
 
             //Assert
+            Assert.Equal(_buyGameModel.FirstName, _request.FirstName);
+            Assert.Equal(_buyGameModel.LastName, _request.LastName);
+            Assert.Equal(_buyGameModel.Email, _request.Email);
+            Assert.Equal(_buyGameModel.Game.Id, _request.GameToBuy.Id);
+            Assert.Equal(_buyGameModel.Game.Name, _request.GameToBuy.Name);
 
-
-            Assert.Equal(buyGame.FirstName, request.FirstName);
-            Assert.Equal(buyGame.LastName, request.LastName);
-            Assert.Equal(buyGame.Email, request.Email);
-            Assert.Equal(buyGame.Game.Id, request.GameToBuy.Id);
-            Assert.Equal(buyGame.Game.Name, request.GameToBuy.Name);
-
-            processorMock.Verify(x => x.BuyGame
+            _processorMock.Verify(x => x.BuyGame
             (It.IsAny<GameBuyingRequest>()), Times.Once);
         }
 
@@ -61,23 +73,70 @@ namespace GameShop.Web
         public void ShouldCallGameBuyingRequestProcessorIfModelIsValid
     (int expectedNumberOfCalls, bool isModelValid)
         {
-            //Arange
-            var processorMock = new Mock<IGameBuyingRequestProcessor>();
-            var controller = new HomeController(processorMock.Object);
-
             if (!isModelValid)
             {
-                controller.ModelState.AddModelError("JustTest", "AnErrorMessage");
+                _homeController.ModelState.AddModelError("JustTest", "AnErrorMessage");
             }
 
-            var buyGame = new GameBuyModel() { Game = new GameModel() };
-
             //Act
-            controller.BuyGame(buyGame);
+            _homeController.BuyGame(_buyGameModel);
 
             //Assert
-            processorMock.Verify(x => x.BuyGame
+            _processorMock.Verify(x => x.BuyGame
             (It.IsAny<GameBuyingRequest>()), Times.Exactly(expectedNumberOfCalls));
+            _homeController.ModelState.Clear();
+        }
+
+        [Fact]
+        public void ShouldAddModelErrorIfGameIsNotAvailabe()
+        {
+            //Arangge
+            _processorMock.Setup(x => x.BuyGame(It.IsAny<GameBuyingRequest>()))
+                .Returns(new GameBuyingResult()
+                {
+                    PurchaseId = null,
+                    StatusCode = GameBuyingResultCode.GameIsNotAvailable
+                });
+
+            //Act
+            var actionResult = _homeController.BuyGame(_buyGameModel) as ViewResult;
+            Assert.NotNull(actionResult);
+
+            var errorModel = actionResult.Model;
+            Assert.NotNull(errorModel);
+
+            var checktype = errorModel is ErrorModel;
+            Assert.True(checktype);
+        }
+        [Fact]
+        public void ShouldRedirectToGameIsNotAvaliableView()
+        {
+            _processorMock.Setup(x => x.BuyGame(It.IsAny<GameBuyingRequest>()))
+        .Returns(new GameBuyingResult()
+        {
+            PurchaseId = null,
+            StatusCode = GameBuyingResultCode.GameIsNotAvailable
+        });
+
+            IActionResult actionResult = _homeController.BuyGame(_buyGameModel);
+
+            Assert.IsType<ViewResult>(actionResult);
+            var viewResult = actionResult as ViewResult;
+
+            Assert.NotNull(viewResult.ViewName);
+            Assert.Equal(viewResult.ViewName, "Views/Home/GameIsNotAvaliable.cshtml");
+        }
+
+        [Fact]
+        public void ShouldRedirectToSuccessView()
+        {
+            IActionResult actionResult = _homeController.BuyGame(_buyGameModel);
+
+            Assert.IsType<ViewResult>(actionResult);
+            var viewResult = actionResult as ViewResult;
+
+            Assert.NotNull(viewResult.ViewName);
+            Assert.Equal(viewResult.ViewName, "Views/Home/Success.cshtml");
         }
     }
 }

@@ -22,9 +22,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameShop.DataAccess.Test", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameShop.DataAccess", "GameShop.DataAccess\GameShop.DataAccess.csproj", "{F295BF55-A3BD-44CF-A381-DFB3D7F49EE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameShop.Web", "GameShop.Web\GameShop.Web.csproj", "{22CD5E6B-4A5B-4269-ABA5-3A34E7D10A35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameShop.Web", "GameShop.Web\GameShop.Web.csproj", "{22CD5E6B-4A5B-4269-ABA5-3A34E7D10A35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameShop.Web.Test", "GameShop.Web.Test\GameShop.Web.Test.csproj", "{088626C9-BBF8-4FE8-BA45-99890FB63BAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameShop.Web.Test", "GameShop.Web.Test\GameShop.Web.Test.csproj", "{088626C9-BBF8-4FE8-BA45-99890FB63BAE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
