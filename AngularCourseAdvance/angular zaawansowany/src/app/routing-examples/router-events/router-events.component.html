@@ -1,0 +1,7 @@
+<h2>Zdarzenia router-outlet</h2>
+<nav>
+  <button mat-button [routerLink]="['message']">Pokaż wiadomość</button>
+  <button mat-button [routerLink]="['message2']">Pokaż drugą wiadomość</button>
+</nav>
+<router-outlet (attach)="onOutlet($event, 'attach')" (detach)="onOutlet($event, 'detach')"
+  (activate)="onOutlet($event, 'activate')" (deactivate)="onOutlet($event, 'deactivate')"></router-outlet>

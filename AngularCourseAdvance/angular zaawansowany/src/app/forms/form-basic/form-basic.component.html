@@ -1,0 +1,28 @@
+<h1>Podstawy formularza</h1>
+<main>
+  <!-- formGroupName (dla grup zagnieżdżonych) -->
+  <mat-card [formGroup]="loginForm">
+    <mat-card-title>Logowanie</mat-card-title>
+    <mat-card-content>
+      <mat-form-field>
+        <input matInput placeholder="Login" formControlName="login">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Hasło" formControlName="password">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Powtórz hasło" formControlName="passwordRepeat">
+      </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="warn" [disabled]="loginForm.invalid">Zaloguj</button>
+    </mat-card-actions>
+  </mat-card>
+  <mat-card>
+    <mat-card-title>Dane z formularza</mat-card-title>
+    <mat-card-content>
+      <p>Obiekt JSON wyświetlany z pipem json</p>
+      <p>{{ loginForm.valueChanges | async | json}}</p>
+    </mat-card-content>
+  </mat-card>
+</main>

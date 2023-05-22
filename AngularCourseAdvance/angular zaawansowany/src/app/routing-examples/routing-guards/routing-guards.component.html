@@ -1,0 +1,9 @@
+<h2>Router guards</h2>
+<nav>
+  <button mat-button [routerLink]="['canactivate']">canActivate</button>
+  <button mat-button [routerLink]="['canactivate-multi']">canActivate mod or admin</button>
+  <button mat-button [routerLink]="['candeactivate']">canDeactivate</button>
+</nav>
+<main>
+  <router-outlet></router-outlet>
+</main>

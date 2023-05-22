@@ -1,0 +1,33 @@
+<h2>Routing pomiędzy tymi samymi ścieżkami</h2>
+<p>Ale z różnymi parametrami</p>
+<nav>
+  Wybierz: <button mat-button [routerLink]="['/routing','same-route']">
+    Sam nie wiem czego chcę (inny route)
+  </button>
+  <button mat-button [routerLink]="['/routing','same-route', 'category', 'electricCars', 'sort', 'priceAsc']">
+    Bateryjki po cenie rosnąco (ten sam route)
+  </button>
+  <!-- przykład nawigacji za pomocą Router.navigate -->
+  <button mat-button
+    (click)="navigateTo(['/routing','same-route', 'category', 'dieselCars', 'sort', 'popularityDesc'])">
+    Na kropelkę po popularności (ten sam route)
+  </button>
+  <a mat-button color="warn" (click)="goBack()">Wstecz</a>
+</nav>
+<main>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Dane do filtrowania</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <!-- albo [] albo .category i tsconfig: noPropertyAccessFromIndexSignature -->
+      <!-- <p>Kategoria: {{ (params$ | async)?.['category'] || 'Brak' }}</p>
+      <p>Sortowanie: {{ (params$ | async)?.['sort'] || 'Brak'}}</p> -->
+      <p>Kategoria (snapshot): {{ params['category'] || 'Brak' }}</p>
+      <p>Sortowanie (snapshot): {{ params['sort'] || 'Brak'}}</p>
+    </mat-card-content>
+  </mat-card>
+</main>
+<p>Rozwiązanie problemu:
+  1) sub do params zamiast snapshot
+  2) Router ExtraOptions: onSameUrlNavigation: 'reload' + resolver </p>

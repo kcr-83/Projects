@@ -1,0 +1,9 @@
+<h2>Odświeżanie widoku</h2>
+<p>Problem: chcę odświeżyć widok bez nawigacji do innej strony i bez F5</p>
+<p><b>Losowa wartość z resolvera: {{ (data$ | async)?.['randomValue'] }}</b></p>
+<button mat-raised-button [routerLink]="[]">Odśwież widok</button>
+<p>Rozwiązanie problemu:</p>
+<ol>
+  <li>runGuardsAndResolvers: 'always' na Route (wyzwalanie guards i resolvers)</li>
+  <li>onSameUrlNavigation: 'reload' (eventy Router-a)</li>
+</ol>

@@ -1,0 +1,13 @@
+angular.io
+angular.love
+angular-university.io
+https://rxjs.dev/guide/operators
+https://www.learnrxjs.io/learn-rxjs/operators
+
+
+https://www.plukasiewicz.net/Angular/Angular8Directives
+https://fsgeek.pl/post/angular-pipes-czyli-jak-przeksztalcac-zmienne-na-widoku/
+
+https://drive.google.com/drive/folders/1GRd1UxPeqFzTgb-nKvE-eBYaKxPRFYBw?usp=sharing
+
+r.brzegowy@gmail.com

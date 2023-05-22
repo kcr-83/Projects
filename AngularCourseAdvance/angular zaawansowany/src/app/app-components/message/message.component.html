@@ -1,0 +1,26 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{title}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p>{{ message }}</p>
+    <ul *ngIf="list">
+      <li *ngFor="let item of list">
+        {{ item }}
+      </li>
+    </ul>
+
+    <ng-container *ngIf="sentences">
+      <ul>
+        <li *ngFor="let sentence of sentences">
+          {{ sentence }}
+        </li>
+      </ul>
+      <p class="credits">*source: scarymommy.com</p>
+    </ng-container>
+  </mat-card-content>
+  <mat-card-actions *ngIf="showButtons">
+    <button mat-raised-button (click)="onAction('ok')">Okej</button>
+    <button mat-raised-button (click)="onAction('cancel')">Łotewer</button>
+  </mat-card-actions>
+</mat-card>

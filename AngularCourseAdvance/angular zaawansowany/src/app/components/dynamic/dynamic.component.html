@@ -1,0 +1,9 @@
+<h3>Komponenty tworzone dynamicznie</h3>
+<nav>
+  <button mat-stroked-button color="warn" (click)="onCreateWidgets()">Utwórz dashboard</button>
+  <button mat-stroked-button color="warn" (click)="onClearDashboard()">Wyczyść dashboard</button>
+</nav>
+<h3>Widgety:</h3>
+<div class="widgets">
+  <ng-container #dynamicDashboard></ng-container>
+</div>

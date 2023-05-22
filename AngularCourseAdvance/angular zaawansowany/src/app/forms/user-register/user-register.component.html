@@ -1,0 +1,14 @@
+<ng-container [formGroup]="userForm">
+  <mat-form-field>
+    <input matInput placeholder="Name" formControlName="name" (blur)="markAsTouched()">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Last name" formControlName="lastname" (blur)="markAsTouched()">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Age" formControlName="age" type="number" (blur)="markAsTouched()">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Password" formControlName="password" (blur)="markAsTouched()">
+  </mat-form-field>
+</ng-container>

@@ -1,0 +1,12 @@
+<p>Licznik: {{licznik}}</p>
+<p>Licznik2: {{licznik2}}</p>
+<p>Licznik internal (setinterval - nie działa na OnPush): {{licznikInternal}}</p>
+<p>Z serwisu (observable | async): {{licznikZSerwisu$ | async}}</p>
+<p>Z serwisu (subscribe - nie działa na OnPush): {{licznikZSerwisu}}</p>
+<mat-chip-list>
+  <!-- wyliczane expression - przestępstwo:) na ChangeDetectorze -->
+  <mat-chip *ngFor="let val of randomValues" color="warn">{{ verySlowCalculate(val) }}</mat-chip>
+</mat-chip-list>
+<div>
+  <button (click)="onClick()" mat-stroked-button>Można mnie kliknąć</button>
+</div>

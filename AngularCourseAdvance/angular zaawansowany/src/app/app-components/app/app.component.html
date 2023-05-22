@@ -1,0 +1,21 @@
+<mat-progress-bar *ngIf="isLoading" mode="indeterminate"></mat-progress-bar>
+<app-header></app-header>
+<mat-card>
+  <nav>
+    <button mat-raised-button color="warn" [routerLink]="['rxjs']" routerLinkActive="active">RxJS</button>
+    <button mat-raised-button color="warn" [routerLink]="['routing']" routerLinkActive="active">Routing</button>
+    <button mat-raised-button color="warn" [routerLink]="['forms']" routerLinkActive="active">Formularze</button>
+    <button mat-raised-button color="warn" [routerLink]="['change-detection']" routerLinkActive="active">Change
+      Detection</button>
+    <button mat-raised-button color="warn" [routerLink]="['content-projection']" routerLinkActive="active">Content
+      Projection</button>
+    <button mat-raised-button color="warn" [routerLink]="['http']" routerLinkActive="active">Http</button>
+    <button mat-raised-button color="warn" [routerLink]="['components']" routerLinkActive="active">Komponenty</button>
+    <button mat-raised-button color="warn" [routerLink]="['testy']" routerLinkActive="active">Testy</button>
+    <button mat-raised-button [routerLink]="['piaskownica']" routerLinkActive="active">Piaskownica</button>
+  </nav>
+</mat-card>
+<mat-card>
+  <router-outlet></router-outlet>
+</mat-card>
+<!-- <app-console></app-console> -->

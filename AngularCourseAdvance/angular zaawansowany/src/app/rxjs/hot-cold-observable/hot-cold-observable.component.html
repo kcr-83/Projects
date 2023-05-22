@@ -1,0 +1,49 @@
+<h2>Hot & Cold Observable</h2>
+<main>
+  <!-- Observable ze zdarzenia -->
+  <mat-card>
+    <mat-card-title>Observable ze zdarzenia</mat-card-title>
+    <mat-card-subtitle>Event po zapisie. Bajka.</mat-card-subtitle>
+    <mat-card-content>
+      Sub 1: {{hotEvent$ | async}}<br>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="warn" #btn>Generuj event-a!</button>
+    </mat-card-actions>
+  </mat-card>
+  <!-- Cold observable z tablicy -->
+  <mat-card>
+    <mat-card-title>Cold observable z tablicy</mat-card-title>
+    <mat-card-subtitle>Każdy sub to nowy producer (z losową liczbą)</mat-card-subtitle>
+    <mat-card-content>
+      Stream: {{ staticHistory || 'puste, cold observable'}} <br>
+      Sub 1: {{static1$ | async}}<br>
+      Sub 2: {{static2$ | async}}<br>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="warn" (click)="onStaticSub1()">Zapisz sub 1</button>
+      <button mat-raised-button color="warn" (click)="onStaticSub2()">Zapisz sub 2</button>
+    </mat-card-actions>
+  </mat-card>
+  <!-- Późny zapis, np. dane z @Input() -->
+  <mat-card>
+    <mat-card-title>Późny zapis, np. dane z @Input() lub z serwisu</mat-card-title>
+    <mat-card-subtitle>Event przed zapisem. Subject nie wystarczy.</mat-card-subtitle>
+    <mat-card-content>
+      Sub z wartości na ngOnInit: {{ nextOnInit | async }}<br>
+      Sub z wartości na ngAfterViewInit: {{ nextAfterViewInit | async }}<br>
+    </mat-card-content>
+  </mat-card>
+  <!-- Zamiana unicast na multi -->
+  <mat-card>
+    <mat-card-title>Zamiana unicast na multi</mat-card-title>
+    <mat-card-subtitle>share() na cold/unicast observable i powstaje multicast</mat-card-subtitle>
+    <mat-card-content *ngIf="connect$">
+      Sub: {{ connect$ | async }}<br>
+      Sub: {{ connect$ | async }}<br>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="warn" (click)="onConnectClick()">Connect 2 sub</button>
+    </mat-card-actions>
+  </mat-card>
+</main>

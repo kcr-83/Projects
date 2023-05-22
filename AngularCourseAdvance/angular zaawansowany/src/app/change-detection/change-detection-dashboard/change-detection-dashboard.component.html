@@ -1,0 +1,16 @@
+<mat-toolbar>
+  <h1>Strategie Change Detection</h1>
+</mat-toolbar>
+<main>
+  <!-- <mat-card>
+    <app-change-detection-default>
+      <app-slow-numbers></app-slow-numbers>
+    </app-change-detection-default>
+  </mat-card> -->
+  <mat-card>
+    <app-change-detection-onpush>
+      <app-slow-numbers [licznik]="licznik$ | async">
+      </app-slow-numbers>
+    </app-change-detection-onpush>
+  </mat-card>
+</main>

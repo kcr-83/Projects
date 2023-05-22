@@ -1,0 +1,83 @@
+<h2>Łączenie strumieni danych</h2>
+<div class="buttons">
+  <button mat-raised-button color="warn" (click)="onEmitClick(1)">Emituj 1</button>
+  <button mat-raised-button color="warn" (click)="onEmitClick(2)">Emituj 2</button>
+  <button mat-raised-button color="warn" (click)="onEmitClick(3)">Emituj 3</button>
+  <button mat-raised-button color="warn" (click)="onCompleteClick(1)">Zakończ 1</button>
+  <button mat-raised-button color="warn" (click)="onCompleteClick(2)">Zakończ 2</button>
+  <button mat-raised-button color="warn" (click)="onCompleteClick(3)">Zakończ 3</button>
+</div>
+<main>
+  <mat-card>
+    <mat-card-title>Monitor</mat-card-title>
+    <mat-card-subtitle>Aktualne wartości strumieni</mat-card-subtitle>
+    <mat-card-content>
+      Interval 900: {{ interval900$ | async }}<br>
+      Interval 1600: {{ interval1600$ | async }}<br>
+      Interval 3000: {{ interval3000$ | async }}<br>
+      Przycisk 1: {{ btn1$ | async }}<br>
+      Przycisk 2: {{ btn2$ | async }}<br>
+      Przycisk 3: {{ btn3$ | async }}<br>
+    </mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-title>raceWith</mat-card-title>
+    <mat-card-subtitle>
+      Weź strumień który jako pierwszy coś wypluł (next, err, complete)<br>
+      Źródło: Interval3000, Przycisk 1
+    </mat-card-subtitle>
+    <mat-card-content>
+      raceWith: {{raceWith$ | async}}<br>
+    </mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-title>zipWith</mat-card-title>
+    <mat-card-subtitle>
+      Emituj wartości jednocześnie. Weź pierwsze wartości, połącz, emituj. Weź drugie emisje, [...]<br>
+      Źródło: Interval900, Interval1600, Interval3000
+    </mat-card-subtitle>
+    <mat-card-content>
+      zipWith: {{zipWith$ | async}}<br>
+    </mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-title>combineLatestWith</mat-card-title>
+    <mat-card-subtitle>
+      Poczekaj na wartość z każdego obs. Zwracaj ostatnie wartości podczas każdej kolejnej emisji.<br>
+      Źródło: Przycisk 1, Przycisk 2
+    </mat-card-subtitle>
+    <mat-card-content>
+      combineLatestWith: {{combineLatestWith$ | async}}<br>
+    </mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-title>forkJoin</mat-card-title>
+    <mat-card-subtitle>
+      Wyemituj ostatnie wartości gdy wszystkie źródła się zakończą (i miały wartości).<br>
+      Źródło: Przycisk 1, Przycisk 2
+    </mat-card-subtitle>
+    <mat-card-content>
+      forkJoin: {{forkJoin$ | async}}<br>
+    </mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-title>merge</mat-card-title>
+    <mat-card-subtitle>
+      Złącz wartości w jeden strumień.<br>
+      Źródło: Przycisk 1, Przycisk 2, Przycisk 3
+    </mat-card-subtitle>
+    <mat-card-content>
+      merge: {{merge$ | async}}<br>
+    </mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-title>switchMap</mat-card-title>
+    <mat-card-subtitle>
+      Złącz wartości w jeden strumień.<br>
+      Źródło: Przycisk 1, interval(1000)
+    </mat-card-subtitle>
+    <mat-card-content>
+      switchMap: {{switchMap$ | async}}<br>
+    </mat-card-content>
+  </mat-card>
+</main>

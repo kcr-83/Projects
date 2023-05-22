@@ -1,0 +1,25 @@
+<h2>Content projection</h2>
+<main>
+  <mat-card>
+    <mat-card-title>
+      Proste content projection
+    </mat-card-title>
+    <mat-card-content>
+      <app-projection-container>
+        <app-message [sentencesCount]="sentencesCount"></app-message>
+      </app-projection-container>
+    </mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-title>
+      Multi content projection
+    </mat-card-title>
+    <mat-card-content>
+      <app-projection-container>
+        <app-message [sentencesCount]="2"></app-message>
+        <div class="header">Raz dwa trzy, kryjesz Ty</div>
+        <app-message [sentencesCount]="2"></app-message>
+      </app-projection-container>
+    </mat-card-content>
+  </mat-card>
+</main>

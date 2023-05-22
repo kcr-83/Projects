@@ -1,0 +1,13 @@
+<h2>Multi router-outlet</h2>
+<nav>
+  <button mat-button [routerLink]="['users', {outlets: {'szczegoly': ['users','leon']}}]">Ludzie - Leon</button>
+  <button mat-button [routerLink]="['cars']">Samochody - Fiat</button>
+</nav>
+<main>
+  <aside>
+    <router-outlet></router-outlet>
+  </aside>
+  <section>
+    <router-outlet name="szczegoly"></router-outlet>
+  </section>
+</main>

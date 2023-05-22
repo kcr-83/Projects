@@ -12,3 +12,7 @@ https://github.com/marcinnajder/powerseq
 
 
 http://pdfmake.org/playground.html
+
+https://fsharpforfunandprofit.com/video/
+
+https://vimeo.com/343153316

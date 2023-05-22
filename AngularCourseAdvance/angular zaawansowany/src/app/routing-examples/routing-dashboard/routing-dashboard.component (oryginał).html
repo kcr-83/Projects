@@ -1,0 +1,17 @@
+<mat-toolbar>
+  <h1>Routing</h1>
+  <!-- znormalizowany link względem <base href> -->
+  <div class="submenu">
+    <button mat-button routerLink="/blablabla">Link donikąd - 404</button>
+    <!-- oczywiście lepiej: /rxjs -->
+    <button mat-button routerLink="../rxjs">Link relatywny - RxJS</button>
+    <button mat-button [routerLink]="['id',12,'type','full','id',22]" [queryParams]="{page: 2}" fragment="basket">
+      Route z parametrami</button>
+    <button mat-button [routerLink]="['same-route','category','all','sort','asc']">Routing do tego samego route</button>
+    <button mat-button [routerLink]="['refresh-view']">Odświeżanie widoku</button>
+    <button mat-button [routerLink]="['events']">Zdarzenia routera i outletu</button>
+    <button mat-button [routerLink]="['free']">Free Route Matcher</button>
+    <button mat-button [routerLink]="['events']">Multi outlet</button>
+  </div>
+</mat-toolbar>
+<router-outlet></router-outlet>

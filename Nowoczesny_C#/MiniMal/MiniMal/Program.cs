@@ -7,7 +7,23 @@ namespace MiniMal
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            while (true)
+            {
+                try
+                {
+                    string? inputText = Console.ReadLine();
+                    Types1.MalType? mal = Reader1.ReadText(inputText!);
+                    if (mal != null)
+                    {
+                        string outputText = Printer1.PrintStr(mal);
+                        Console.WriteLine(outputText);
+                    }
+                }
+                catch (Exception exception)
+                {
+                    Console.WriteLine("Error: " + exception.Message);
+                }
+            }
         }
         internal static IEnumerable<string> ProcessItems(string[] items)
         {

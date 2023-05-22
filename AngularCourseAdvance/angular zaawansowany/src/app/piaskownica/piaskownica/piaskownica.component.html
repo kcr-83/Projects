@@ -1,0 +1,48 @@
+<mat-toolbar>
+  <h1>Piaskownica</h1>
+  <div class="submenu">
+    <!-- <button mat-button [routerLink]="['basic']">Podstawy</button> -->
+  </div>
+</mat-toolbar>
+<main>
+  <mat-card>
+    <mat-card-title>1. Koordynaty myszy po kliknięciu</mat-card-title>
+    <mat-card-content>
+      Wyemituj koordynaty myszy po kliknięciu w dowolne miejsce na dokumencie.
+      <br>Wykorzystaj fromEvent() na document.click.
+    </mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-title>2. Koordynaty myszy w interwale</mat-card-title>
+    <mat-card-content>
+      Wyemituj koordynaty kursora nie częściej niż co 1s (jeśli koordynaty się zmieniły). <br>
+      Działa? Zmień na wersję: wyemituj koordynaty jak user nie rusza myszą od 2s i x>500<br>
+      Wykorzystaj sampleTime, debounceTime, filter
+    </mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-title>3. Głosowanie</mat-card-title>
+    <mat-card-content>
+      Są trzy osoby uprawnione do głosowania ('za'/'przeciw'). Pierwsza oddaje głos po 2s, druga po 3s, trzeci po 1s.
+      Zaprezentuj wyniki głosowania gdy wszystkie głosy zostaną oddane.
+    </mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-title>4. SearchBox </mat-card-title>
+    <mat-card-content>
+      <p>
+        Zapisz się na zdarzenie input pola tekstowego (roboczo - jest to wyszukiwarka). Emituj wpisane wartości gdy
+        użytkownik
+        przerwał wpisywanie na min. 300ms i wartość nie jest pusta.
+      </p>
+      <p>GOTOWE? Rozbuduj kod o zapamiętywanie wyszukiwań usera (historia wyszukiwania).</p>
+      <mat-form-field>
+        <input #searchBox matInput placeholder="Type here">
+      </mat-form-field>
+      <ng-container *ngIf="formattedHistory$ | async as history">
+        <p>Historia wyszukiwań:</p>
+        <p>{{ history }}</p>
+      </ng-container>
+    </mat-card-content>
+  </mat-card>
+</main>

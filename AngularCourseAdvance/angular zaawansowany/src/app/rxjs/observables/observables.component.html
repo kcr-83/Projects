@@ -1,0 +1,52 @@
+<h2>Observables</h2>
+<main>
+  <mat-card>
+    <mat-card-title>Observable</mat-card-title>
+    <mat-card-content>
+      Pierwszy sub: {{ observable | async}}<br>
+      <ng-container *ngIf="showLateSubs">Sub po 3s: <app-highlight>{{ observable | async}}</app-highlight><br>
+      </ng-container>
+      <ng-container *ngIf="showOnCompleteSubs">Sub po complete: <app-highlight>case nie ma sensu (unicast)<br>
+        </app-highlight>
+      </ng-container>
+    </mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-title>Subject</mat-card-title>
+    <mat-card-content>
+      Pierwszy sub: {{ subject | async}}<br>
+      <ng-container *ngIf="showLateSubs">Sub po 3s: {{ subject | async}}<br></ng-container>
+      <ng-container *ngIf="showOnCompleteSubs">Sub po complete: {{ subject | async}}<br></ng-container>
+    </mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-title>BehaviorSubject</mat-card-title>
+    <mat-card-content>
+      Pierwszy sub: {{ behaviorSubject | async}}<br>
+      <ng-container *ngIf="showLateSubs">Sub po 3s: {{ behaviorSubject | async}}<br></ng-container>
+      <ng-container *ngIf="showOnCompleteSubs">Sub po complete: {{ behaviorSubject | async}}<br></ng-container>
+    </mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-title>ReplaySubject</mat-card-title>
+    <mat-card-content>
+      Pierwszy sub: {{ replaySubject | async}}<br>
+      <ng-container *ngIf="showLateSubs">po 3s: {{ replaySubject | async }}
+        <p>tutaj widać ostatnią wyemitowaną wartość, replay widoczny w konsoli</p>
+      </ng-container>
+      <ng-container *ngIf="showOnCompleteSubs">Sub po complete: {{ replaySubject | async}}<br>
+      </ng-container>
+    </mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-title>AsyncSubject</mat-card-title>
+    <mat-card-content>
+      Pierwszy sub: {{ asyncSubject | async}}<br>
+      <ng-container *ngIf="showLateSubs">Sub po 3s: {{ asyncSubject | async}}<br></ng-container>
+      <ng-container *ngIf="showOnCompleteSubs">Sub po complete: {{ asyncSubject | async}}<br></ng-container>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="warn" (click)="onCompleteAsyncSubject()">Zakończ AsyncSubject</button>
+    </mat-card-actions>
+  </mat-card>
+</main>

@@ -1,0 +1,32 @@
+<h2>Route z parametrami</h2>
+<main>
+  <mat-card>
+    <mat-card-title>Parametry </mat-card-title>
+    <mat-card-subtitle>ActivatedRoute.snapshot.params</mat-card-subtitle>
+    <mat-card-content>
+      {{ routeParams | json }}
+    </mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-title>Parametry rodzica</mat-card-title>
+    <mat-card-subtitle>ActivatedRoute.snapshot.parent.params</mat-card-subtitle>
+    <mat-card-content>
+      {{ parentRouteParams | json }}
+    </mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-title>Query</mat-card-title>
+    <mat-card-subtitle>ActivatedRoute.snapshot.queryParams</mat-card-subtitle>
+    <mat-card-content>
+      {{ queryParams | json }}
+    </mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-title>Fragment</mat-card-title>
+    <mat-card-subtitle>ActivatedRoute.snapshot.fragment</mat-card-subtitle>
+    <mat-card-content>
+      {{ fragment }}
+    </mat-card-content>
+  </mat-card>
+</main>
+<router-outlet></router-outlet>

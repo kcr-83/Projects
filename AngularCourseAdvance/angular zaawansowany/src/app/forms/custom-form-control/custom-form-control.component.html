@@ -1,0 +1,9 @@
+<ng-container [formGroup]="newUserRegister">
+  <mat-form-field>
+    <input matInput placeholder="Date" formControlName="date">
+  </mat-form-field>
+  <app-user-register formControlName="user"></app-user-register>
+</ng-container>
+<div>
+  <button mat-stroked-button (click)="toggleForm()">Toggle form</button>
+</div>

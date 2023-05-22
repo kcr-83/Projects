@@ -1,0 +1,10 @@
+<mat-toolbar>
+  <h1>Reactive forms</h1>
+  <div class="submenu">
+    <button mat-button [routerLink]="['basic']">Podstawy</button>
+    <button mat-button [routerLink]="['validators']">Typy, walidacja</button>
+    <!-- <button mat-button [routerLink]="['validators']">Dynamiczny formularz</button> -->
+    <button mat-button [routerLink]="['custom-control']">Własna kontrolka</button>
+  </div>
+</mat-toolbar>
+<router-outlet></router-outlet>

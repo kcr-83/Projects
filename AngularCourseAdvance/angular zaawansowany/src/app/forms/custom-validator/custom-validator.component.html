@@ -1,0 +1,28 @@
+<h2>Typowany formularz, </h2>
+<main>
+  <!-- formGroupName (dla grup zagnieżdżonych) -->
+  <mat-card [formGroup]="contactForm">
+    <mat-card-title>E-mail</mat-card-title>
+    <mat-card-content>
+      <mat-form-field>
+        <input matInput placeholder="e-mail" formControlName="email">
+      </mat-form-field>
+      <mat-checkbox formControlName="rodo">Rodo</mat-checkbox>
+      <mat-form-field>
+        <input matInput placeholder="phone" formControlName="phone">
+      </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="warn" [disabled]="contactForm.invalid">Wyślij</button>
+    </mat-card-actions>
+  </mat-card>
+  <mat-card>
+    <mat-card-title>Dane z formularza</mat-card-title>
+    <mat-card-content>
+      <p>Obiekt JSON wyświetlany z pipem json</p>
+      <p>{{ contactForm.valueChanges | async | json}}</p>
+      <p>Status: {{contactForm.statusChanges | async }}</p>
+      <!-- <p>Błędy walidacji email: {{contactForm.get('email')?.errors | json}}</p> -->
+      <p>Błędy walidacji: {{contactForm.errors | json}}</p>
+    </mat-card-content>
+  </mat-card>
