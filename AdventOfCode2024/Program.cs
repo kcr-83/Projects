@@ -1,7 +1,7 @@
 ﻿//https://adventofcode.com/2024/
 try
 {
-    var runDay = new Day03();
+    var runDay = new Day04();
     runDay.Run();
 }
 catch (Exception ex)
